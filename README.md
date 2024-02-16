@@ -1,3 +1,5 @@
+
+
 <h1 align="center">
   Chat Application Development with React.js and Node.js
 
@@ -47,3 +49,7 @@ npm start
 
 🌟 You are all set!
 ## ## DEMO LINK 
+
+
+https://github.com/SouravKrGupta/Chat_App/assets/89971045/05f7209c-6298-4cbc-8584-fb8570b51f1b
+
