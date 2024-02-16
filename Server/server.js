@@ -4,7 +4,8 @@ const { default: mongoose } = require("mongoose");
 const app = express();
 const cors = require("cors");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-
+//path deploy
+const path = require("path");
 app.use(
   cors({
     origin: "*",
@@ -39,7 +40,11 @@ app.use("/message", messageRoutes);
 // Error Handling middlewares
 app.use(notFound);
 app.use(errorHandler);
-
+//static file
+app.use(express.static(path.join(__dirname, "../client/build")));
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 const PORT = process.env.PORT || 8080;
 const server = app.listen(PORT, console.log("Server is Running..."));
 
