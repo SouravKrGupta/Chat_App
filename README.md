@@ -24,16 +24,16 @@
 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/SouravKrGupta/Chat_App.git
 ```
 
 2. Change the working directory
 
 ```bash
-cd github-profile-readme-generator
+cd client 
 ```
 
-3. Install dependencies
+3. Install dependencies for client and server
 
 ```bash
 npm install
@@ -46,3 +46,4 @@ npm start
 ```
 
 🌟 You are all set!
+## ## DEMO LINK 
